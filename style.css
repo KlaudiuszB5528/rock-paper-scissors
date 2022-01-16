@@ -108,6 +108,7 @@ footer {
   .container {
     justify-content: center;
     min-height: 80vh;
+    max-width: 100%;
   }
   .main-header {
     font-size: 0.7rem;
@@ -127,6 +128,7 @@ footer {
   .vs {
     align-self: flex-end;
     margin-top: 60px;
+    font-size: 7px;
   }
   .display img {
     margin-top: 50px;
