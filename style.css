@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  min-height: 100vh;
+}
+:root {
+  --dark: #151426;
+  --lightblue: #b4c8d9;
+  --yellow: #f2d98c;
+  --brown: #402e24;
+  --orange: #bf7f5a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+  background-color: var(--dark);
+  color: var(--lightblue);
+}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.main-header {
+  font-size: 1.3rem;
+  flex-basis: 100%;
+  text-align: center;
+}
+.main-content {
+  flex-basis: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  gap: 20px;
+}
+.main-content section {
+  flex-basis: 30%;
+  height: 300px;
+}
+h2 {
+  padding-top: 20px;
+}
+.display {
+  flex-basis: 30%;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.display img {
+  flex-basis: 30%;
+  align-self: flex-start;
+  margin-bottom: 25px;
+}
+.vs {
+  padding-bottom: 75px;
+}
+.player,
+.computer {
+  text-align: center;
+  flex-basis: 30%;
+}
+.display-message {
+  font-size: 30px;
+  flex-basis: 100%;
+}
+img {
+  margin-top: 10px;
+  height: 100px;
+  width: 100px;
+}
+
+.images {
+  flex-basis: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.choices:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+.images span {
+  text-align: center;
+  flex-basis: 100%;
+}
+footer {
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.fa-github {
+  color: var(--lightblue);
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+
+@media (max-width: 550px) {
+  .container {
+    justify-content: center;
+    min-height: 80vh;
+  }
+  .main-header {
+    font-size: 0.7rem;
+  }
+  .main-header p {
+    font-size: 1rem;
+  }
+  .main-content {
+    gap: 4px;
+  }
+  .main-content section {
+    height: 150px;
+  }
+  h2 {
+    padding-top: 15px;
+  }
+  .vs {
+    align-self: flex-end;
+    margin-top: 60px;
+  }
+  .display img {
+    margin-top: 50px;
+  }
+
+  .display-message {
+    font-size: 15px;
+  }
+  img {
+    height: 45px;
+    width: 45px;
+  }
+
+  .images {
+    gap: 3px;
+    padding-bottom: 15px;
+  }
+  .images span {
+    margin: 0;
+    padding: 0;
+  }
+  footer {
+    margin-top: 2rem;
+    align-self: flex-end;
+  }
+}

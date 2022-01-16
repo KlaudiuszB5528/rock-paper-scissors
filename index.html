@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,600;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f9753df0df.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Rock Paper Scissors Game!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-header">
+        <h1>Rock-Paper-Scissors Game!</h1>
+        <p>First to 5 wins</p>
+      </div>
+      <div class="main-content">
+        <section class="player">
+          <h2>Player</h2>
+          <img src="/rock-paper-scissors/images/gamer.svg" alt="player icon" />
+          <p>Score:<span class="player-score"></span></p>
+        </section>
+        <section class="display">
+          <span class="display-message">Let the battle begin!</span>
+          <img
+            src="/rock-paper-scissors/images/questionmark.svg"
+            alt="questionmark icon"
+            id="player-choice"
+          />
+          <span class="vs">VS</span>
+          <img
+            src="/rock-paper-scissors/images/questionmark.svg"
+            alt="questionmark icon"
+            id="computer-choice"
+          />
+        </section>
+        <section class="computer">
+          <h2>Computer</h2>
+          <img
+            src="/rock-paper-scissors/images/computer.svg"
+            alt="player icon"
+          />
+          <p>Score:<span class="computer-score"></span></p>
+        </section>
+      </div>
+      <section class="images">
+        <span>Choose Your Weapon!</span>
+        <img
+          src="/rock-paper-scissors/images/rock.svg"
+          alt="rock image"
+          id="rock"
+          class="choices"
+        />
+        <img
+          src="/rock-paper-scissors/images/paper.svg"
+          alt="paper image"
+          id="paper"
+          class="choices"
+        />
+        <img
+          src="/rock-paper-scissors/images/scissors.svg"
+          alt="scissors image"
+          id="scissors"
+          class="choices"
+        />
+      </section>
+      <footer>
+        Copyright &copy
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Klaudiusz Biegacz
+        <a href="https://github.com/KlaudiuszB5528" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
