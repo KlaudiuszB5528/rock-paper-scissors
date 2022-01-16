@@ -53,6 +53,6 @@ const endGame = () => {
 };
 
 const displayResults = (playerChoice, computerChoice) => {
-  playerResult.src = `/images/${playerChoice}.svg`;
-  computerResult.src = `/images/${computerChoice}.svg`;
+  playerResult.src = `/rock-paper-scissors/images/${playerChoice}.svg`;
+  computerResult.src = `/rock-paper-scissors/images/${computerChoice}.svg`;
 };
