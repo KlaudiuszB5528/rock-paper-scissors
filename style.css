@@ -127,28 +127,29 @@ footer {
   }
   .vs {
     font-size: 6px;
-    position: absolute;
-    top: 32%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
   }
   .display img {
     margin: 50px auto 0 auto;
   }
 
   .display-message {
-    font-size: 15px;
+    font-size: 13px;
   }
   img {
     height: 45px;
     width: 45px;
   }
-
+  .display img {
+    width: 33px;
+  }
   .images {
     gap: 3px;
     padding-bottom: 15px;
-  }
-  .images span {
-    margin: 0;
-    padding: 0;
   }
   footer {
     margin-top: 2rem;
