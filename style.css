@@ -126,6 +126,7 @@ footer {
     padding-top: 15px;
   }
   .vs {
+    position: static;
     font-size: 6px;
     height: 100%;
     display: flex;
