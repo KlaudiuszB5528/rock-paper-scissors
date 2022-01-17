@@ -53,10 +53,10 @@ h2 {
 .display img {
   flex-basis: 30%;
   align-self: flex-start;
-  margin-bottom: 25px;
+  margin: 0 auto 25px auto;
 }
 .vs {
-  padding-bottom: 75px;
+  position: absolute;
 }
 .player,
 .computer {
@@ -126,12 +126,12 @@ footer {
     padding-top: 15px;
   }
   .vs {
-    align-self: flex-end;
-    margin-top: 60px;
-    font-size: 7px;
+    font-size: 6px;
+    position: absolute;
+    top: 32%;
   }
   .display img {
-    margin-top: 50px;
+    margin: 50px auto 0 auto;
   }
 
   .display-message {
@@ -154,4 +154,17 @@ footer {
     margin-top: 2rem;
     align-self: flex-end;
   }
+}
+
+.playAgain {
+  background-color: var(--lightblue);
+  border-radius: 2rem;
+  align-self: flex-start;
+}
+.playAgain a {
+  text-decoration: none;
+  color: black;
+}
+.playAgain:hover {
+  transform: scale(1.2);
 }

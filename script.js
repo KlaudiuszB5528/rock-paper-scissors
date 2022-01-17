@@ -2,15 +2,28 @@ const POSSIBILITIES = ["rock", "paper", "scissors"];
 
 const buttons = document.querySelectorAll(".choices");
 const display = document.querySelector(".display-message");
+const displayParent = document.querySelector(".display");
+const displayChild = document.querySelector(".vs");
 const playerScore = document.querySelector(".player-score");
 const computerScore = document.querySelector(".computer-score");
 const playerResult = document.getElementById("player-choice");
 const computerResult = document.getElementById("computer-choice");
+const playAgainButton = document.createElement("button");
+const link = document.createElement("a");
+link.href = "index.html";
+link.textContent = "Play Again";
+playAgainButton.classList.add("playAgain");
+playAgainButton.appendChild(link);
+
 playerScore.textContent = 0;
 computerScore.textContent = 0;
 
+const handleClick = (e) => {
+  whoWon(e);
+};
+
 buttons.forEach((button) => {
-  button.addEventListener("click", (e) => whoWon(e));
+  button.addEventListener("click", handleClick);
 });
 
 const whoWon = (e) => {
@@ -48,8 +61,13 @@ const endGame = () => {
     display.textContent = "You've won the game!";
   if (computerScore.textContent == 5)
     display.textContent = "The Computer has won the game!";
-  playerScore.textContent = 0;
-  computerScore.textContent = 0;
+  displayParent.removeChild(playerResult);
+  displayParent.removeChild(computerResult);
+  displayParent.removeChild(displayChild);
+  buttons.forEach((button) => {
+    button.removeEventListener("click", handleClick);
+  });
+  displayParent.appendChild(playAgainButton);
 };
 
 const displayResults = (playerChoice, computerChoice) => {
